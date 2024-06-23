@@ -1,0 +1,6 @@
+.MovieInfoPage{
+    background-color: var(--light_primary);
+}
+.MovieInfoPageDark{
+    background-color: var(--dark_primary);
+}

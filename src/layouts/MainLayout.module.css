@@ -1,0 +1,16 @@
+
+.MainLayout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light_back);
+    min-height: 100vh;
+}
+.MainLayoutDark {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121212; /* Темний колір фону */
+    color: #f0f0f0; /* Світлий колір тексту */
+    min-height: 100vh;
+}

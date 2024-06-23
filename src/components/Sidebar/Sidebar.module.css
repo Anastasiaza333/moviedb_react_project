@@ -1,0 +1,39 @@
+/* Sidebar.module.css */
+.sidebarButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebarButton:hover {
+    background-color: #45a049;
+}
+
+.drawerList {
+    width: 250px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.drawerListLight {
+    color: black;
+    background-color: white;
+}
+
+.drawerListDark {
+    color: #899b0c;
+    background-color: #06102e;
+}
+
+.listItemButton {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.listItemButton:hover {
+    background-color: #4caf50;
+    color: white;
+}

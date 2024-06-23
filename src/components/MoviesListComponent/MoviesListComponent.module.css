@@ -1,0 +1,73 @@
+:root {
+    --light_bg: #f9f9f9;
+    --dark_bg: #1c1c1c;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --card-bg-dark: rgba(0, 0, 0, 0.8);
+}
+
+.MoviesList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--light_bg);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.MoviesListDark {
+    background-color: var(--dark_bg);
+}
+
+.MoviesListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    padding: 10px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MoviesListItemDark {
+    background-color: var(--card-bg-dark);
+}
+
+.MoviesListItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.MoviesListItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.MoviesListItem:hover img {
+    transform: scale(1.05);
+}
+
+.MoviesListItem h6 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.MoviesListItem:hover h6 {
+    color: #4caf50;
+}
+
+.MoviesListItem p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}

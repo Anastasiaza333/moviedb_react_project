@@ -1,0 +1,77 @@
+:root {
+    --light_head: #f0f0f0;
+    --dark_head: #333;
+}
+
+.HeaderComponent,
+.HeaderComponentDark {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 7vh 10vw;
+    z-index: 3;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.HeaderComponent {
+    background-color: var(--light_head);
+}
+
+.HeaderComponentDark {
+    background-color: var(--dark_head);
+}
+
+.HeaderComponent:hover,
+.HeaderComponentDark:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homeLink {
+    margin-left:40%; /* Відступ для home page */
+}
+
+.themes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.themes button {
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.themes button:hover {
+    background-color: #45a049;
+}
+
+.genres {
+    display: flex;
+    align-items:center;;
+    justify-content: flex-end; /* Вирівнювання елементів по правому краю */
+    gap: 8rem;
+}
+
+.genres h2 {
+    cursor: pointer;
+    margin:0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.genres h2:hover {
+    color: #4caf50;
+    transform: scale(1.1);
+}
+
+.genres h2:active {
+    transform: scale(1.05);
+}

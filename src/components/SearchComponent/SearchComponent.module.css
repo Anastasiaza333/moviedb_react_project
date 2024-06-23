@@ -1,0 +1,53 @@
+.SearchComponent {
+    width: 20vw;
+    margin: 0 4vw;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: absolute; /* Позиціонування абсолютно */
+    right: 80px; /* Відступ від правого краю */
+    top: 7%; /* Південне вирівнювання по вертикалі */
+    transform: translateY(-50%); /* Зміщення назад на половину висоти власного контейнера */
+    z-index: 999; /* Збільшення з індексом, щоб була поверх інших елементів */
+}
+
+.SearchComponent:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.SearchComponent form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.SearchComponent input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.SearchComponent input[type="text"]:focus {
+    background-color: #e0e0e0;
+}
+
+.SearchComponent Button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.SearchComponent Button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
