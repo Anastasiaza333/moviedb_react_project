@@ -1,4 +1,4 @@
-import {IMovie} from "./movieType";
+import {IMovie} from "./movieInterfaces";
 
 export interface IResponseBase {
     page: number,

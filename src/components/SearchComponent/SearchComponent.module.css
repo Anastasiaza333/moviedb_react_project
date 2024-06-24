@@ -1,15 +1,24 @@
+:root {
+    --light_background: #f1f1f1;
+    --dark_background: #333;
+    --light_text: #000;
+    --dark_text: #fff;
+    --primary_color: #0a75ce;
+}
+
 .SearchComponent {
-    width: 20vw;
+    width: 15vw;
     margin: 0 4vw;
-    background-color: #f1f1f1;
+    background-color: var(--light_background);
+    color: var(--light_text);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    position: absolute; /* Позиціонування абсолютно */
-    right: 80px; /* Відступ від правого краю */
-    top: 7%; /* Південне вирівнювання по вертикалі */
-    transform: translateY(-50%); /* Зміщення назад на половину висоти власного контейнера */
-    z-index: 999; /* Збільшення з індексом, щоб була поверх інших елементів */
+    position: absolute;
+    right: 120px;
+    top: 7%;
+    transform: translateY(-50%);
+    z-index: 999;
 }
 
 .SearchComponent:hover {
@@ -20,11 +29,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 8px;
 }
 
 .SearchComponent input[type="text"] {
-    width: 80%;
+    width: 50%;
     padding: 8px;
     border: none;
     border-radius: 5px 0 0 5px;
@@ -37,17 +46,29 @@
     background-color: #e0e0e0;
 }
 
-.SearchComponent Button {
-    padding: 8px 16px;
+.SearchComponent button {
+    padding: 8px 8px;
     border: none;
     border-radius: 0 5px 5px 0;
-    background-color: #4caf50;
+    background-color: var(--primary_color);
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.SearchComponent Button:hover {
-    background-color: #45a049;
+.SearchComponent button:hover {
+    background-color: var(--primary_color);
     transform: scale(1.05);
+}
+body.dark-theme .SearchComponent {
+    background-color: var(--dark_background);
+    color: var(--dark_text);
+}
+
+body.dark-theme .SearchComponent input[type="text"]:focus {
+    background-color: #444;
+}
+
+body.dark-theme .SearchComponent button {
+    background-color: var(--primary_color);
 }

@@ -7,18 +7,10 @@ import SearchPage from "./pages/SearchPage/SearchPage";
 const router = createBrowserRouter([
     {
         path: '', element: <MainLayout/>, children: [
-            {
-                index: true, element: <Navigate to={'main?page=1'}/>
-            },
-            {
-                path: '/main', element: <MoviesPage/>
-            },
-            {
-                path: 'movie', element: <MovieInfoPage/>
-            },
-            {
-                path: 'results', element: <SearchPage/>
-            },
+            {index: true, element: <Navigate to={'main?page=1'}/>},
+            {path: '/main', element: <MoviesPage/>},
+            {path: 'movie', element: <MovieInfoPage/>},
+            {path: 'results', element: <SearchPage/>},
         ]
     }
 ])

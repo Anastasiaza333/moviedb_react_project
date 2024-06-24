@@ -1,9 +1,8 @@
-import {IBelongsToCollection} from "./collectionType";
-import {IGenre} from "./genreType";
-import {IProductionCompany} from "./prodCompanyType";
-import {IProductionCountry} from "./prodCountryType";
-import {ISpokenLanguage} from "./languageType";
-
+import {IBelongsToCollection,
+    IGenre,
+    IProductionCompany,
+    IProductionCountry,
+    ISpokenLanguage} from "./movieInterfaces";
 export interface IMovieDetail {
     adult: boolean,
     backdrop_path: string,

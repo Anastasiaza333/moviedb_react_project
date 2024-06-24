@@ -7,7 +7,7 @@ import {moviesActions} from "../../store/slice/movieSlice";
 import SearchComponent from "../SearchComponent/SearchComponent";
 import DarkThemeComponent from "../DarkThemeComponent/DarkThemeComponent";
 import Authorization from "../Authorization/Authorization";
-import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from "../SidebarComponent/SidebarComponent";
 
 const HeaderComponent = () => {
     const dispatch = useAppDispatch();
@@ -15,7 +15,7 @@ const HeaderComponent = () => {
     const theme = localStorage.getItem('theme')
     const theme1 = useAppSelector(state => state.moviesResponse.darkTheme);
 
-    const goHome = () => {
+    const homePage = () => {
 
         dispatch(moviesActions.getByPage('1'))
 
@@ -26,7 +26,7 @@ const HeaderComponent = () => {
     return (
         <div className={theme1||theme ? css.HeaderDark : css.Header}>
             <div className={css.genres}>
-                <h2 onClick={()=>goHome()}>HOME PAGE</h2>
+                <h2 onClick={()=>homePage()}>HOME PAGE</h2>
                 <Sidebar/>
             </div>
             <div className={css.themes}>

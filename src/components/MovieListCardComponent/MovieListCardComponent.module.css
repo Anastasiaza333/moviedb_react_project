@@ -1,103 +1,57 @@
-:root {
-    --card-bg: rgba(255, 255, 255, 0.8);
-    --card-bg-dark: rgba(0, 0, 0, 0.8);
-    --title-color: white;
-}
-
-.MoviesListCardContainer {
+.MoviesListCardContainer{
     width: 15vw;
-    margin: 30px;
+    margin: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     backdrop-filter: blur(5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    padding: 10px;
-}
 
-.MoviesListCardContainer:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.MoviesListCardContainer h6 {
+.MoviesListCardContainer h6{
     overflow: hidden;
     display: block;
     width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 20px;
+    white-space: inherit;
+    text-overflow: fade;
+    font-size: 15px;
     margin: 0;
-    color: #333;
-    transition: color 0.3s ease;
 }
-
-.MoviesListCardContainer:hover h6 {
-    color: #4caf50;
-}
-
-.MoviesListCard {
-    width: 100%;
+.MoviesListCard{
+    width: 15vw;
     display: flex;
     height: 40vh;
     cursor: pointer;
+
     flex-direction: column;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     object-fit: cover;
     justify-content: space-between;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease;
 }
-
-.MoviesListCard span {
+.MoviesListCard span{
     font-size: 14px;
-    color: var(--title-color);
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    /*color: white;*/
 }
-
-.MoviesListCard:hover {
-    transform: scale(1.05);
+.MoviesListCard:hover .Title{
+    opacity: 100;
+    transition: 500ms;
 }
-
-.MoviesListCard:hover .Title {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-}
-
-.Title {
+.Title{
     height: 25%;
     opacity: 0;
-    transition: opacity 0.5s ease;
-    text-overflow: ellipsis;
+    transition: 500ms;
+    text-overflow: initial;
     overflow: hidden;
-    color: var(--title-color);
-    line-height: 1.2;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 0 0 10px 10px;
-}
+    color: white;
+    line-height: 80%;
 
-.Stars {
+}
+.Stars{
     opacity: 0;
-    transition: opacity 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    color: #ffb400;
-    font-size: 20px;
+    transition: 500ms;
 }
-
-.MoviesListCard:hover .Stars {
+.MoviesListCard:hover .Stars{
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: 500ms;
 }

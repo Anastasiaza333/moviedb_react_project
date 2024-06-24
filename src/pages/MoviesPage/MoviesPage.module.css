@@ -1,18 +1,23 @@
-.MoviesPage{
+.MoviesPage {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 80%;
     align-items: center;
-    background-color: var(--light_primary);
-
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.MoviesPageDark{
+
+.MoviesPageDark {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 80%;
     align-items: center;
-    background-color: var(--dark_primary);
-
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

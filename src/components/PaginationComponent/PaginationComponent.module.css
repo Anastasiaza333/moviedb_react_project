@@ -1,3 +1,10 @@
+:root {
+    --light_head: #f0f0f0;
+    --dark_head: #333;
+    --light_blue: #add8e6; /* Light blue color */
+    --dark_blue: #0000ff; /* Dark blue color for night mode */
+}
+
 .PaginationContainer {
     display: flex;
     justify-content: center;
@@ -7,7 +14,7 @@
 }
 
 .PaginationButton {
-    background-color: #4caf50;
+    background-color: var(--light_blue); /* Default to light blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -19,7 +26,7 @@
 }
 
 .PaginationButton:hover {
-    background-color: #45a049;
+    background-color: var(--light_blue);
     transform: scale(1.1);
 }
 
@@ -29,15 +36,16 @@
 }
 
 .PaginationButtonActive {
-    background-color: #3e8e41;
+    background-color: var(--light_blue);
     font-weight: bold;
 }
 
+/* Night mode styles */
 .PaginationButtonDark {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--dark_blue); /* Dark blue background */
+    color: #fff; /* White text */
 }
 
 .PaginationButtonDark:hover {
-    background-color: #444;
+    background-color: #444; /* Darken hover state slightly */
 }

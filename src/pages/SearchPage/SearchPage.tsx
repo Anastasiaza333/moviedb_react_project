@@ -2,7 +2,7 @@ import {memo, useEffect, useState} from 'react';
 import {useSearchParams} from "react-router-dom";
 import MoviesListComponent from "../../components/MoviesListComponent/MoviesListComponent";
 import {moviesService} from "../../services/moviesService";
-import {IResponseBase} from "../../types/responseBaseType";
+import {IResponseBase} from "../../interfaces/responseBaseInterface";
 
 const SearchPage = memo(() => {
     const [query] = useSearchParams();

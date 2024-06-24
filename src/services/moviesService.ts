@@ -1,9 +1,9 @@
 import {URL} from '../consts/urls';
 import {apiService} from "./apiService";
 import {AxiosResponse} from "axios";
-import {IResponseBase} from "../types/responseBaseType";
-import {IMovieDetail} from "../types/movieDetailsType";
-import {IGenres} from "../types/genresType";
+import {IResponseBase} from "../interfaces/responseBaseInterface";
+import {IMovieDetail} from "../interfaces/movieDetailsInterface";
+import {IGenres} from "../interfaces/genresInterface";
 
 const moviesService = {
     getByPage: async (page:string) : Promise<AxiosResponse<IResponseBase>> => await apiService(URL.movies.base+`?page=${page}`),

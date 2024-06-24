@@ -1,5 +1,5 @@
 import css from './MovieListCardComponent.module.css'
-import {IMovie} from "../../types/movieType";
+import {IMovie} from "../../interfaces/movieInterfaces";
 import {FC} from "react";
 import {Badge, Rating} from "@mui/material";
 import {imgBaseUrl} from "../../consts/urls";
@@ -8,12 +8,12 @@ import {useNavigate} from "react-router-dom";
 interface Props {
     movie: IMovie
 }
-const MovieListCard : FC<Props> = ({movie}) => {
+const MovieListCardComponent : FC<Props> = ({movie}) => {
     const navigate = useNavigate();
     const {title, overview, vote_average} = movie;
     let voteAverage =null;
     if(movie.vote_average>=8){
-        voteAverage = 'High rating movie';
+        voteAverage = 'Top rating';
     }
     return (
         <div className={css.MoviesListCardContainer}>
@@ -44,4 +44,4 @@ const MovieListCard : FC<Props> = ({movie}) => {
     );
 };
 
-export default MovieListCard;
+export default MovieListCardComponent;

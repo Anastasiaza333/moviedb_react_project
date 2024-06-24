@@ -1,4 +1,4 @@
-import {IMovieDetail} from "../../types/movieDetailsType";
+import {IMovieDetail} from "../../interfaces/movieDetailsInterface";
 import {FC} from "react";
 import css from './MovieInfoComponent.module.css'
 import {Rating} from "@mui/material";
@@ -8,7 +8,7 @@ interface Props {
     movieInfo : IMovieDetail
 }
 
-const MovieInfo : FC<Props> = ({movieInfo}) => {
+const MovieInfoComponent : FC<Props> = ({movieInfo}) => {
     const theme1 = useAppSelector(state => state.moviesResponse.darkTheme);
     const theme = localStorage.getItem('theme')
     const {genres, overview, title, release_date, poster_path, vote_average} = movieInfo
@@ -38,4 +38,4 @@ const MovieInfo : FC<Props> = ({movieInfo}) => {
     );
 };
 
-export default MovieInfo;
+export default MovieInfoComponent;

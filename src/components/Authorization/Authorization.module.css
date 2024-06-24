@@ -2,26 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh; /* Висота на всю висоту вікна */
-    /*background-color: #f0f0f0; !* Світло-сірий фон *!*/
-    font-size: 2rem; /* Збільшений розмір шрифту */
-    color: #333; /* Темно-сірий колір тексту */
-    position: relative; /* Додано для позиціонування кнопки */
-}
+    height: 15vh;
 
+    font-size: 2rem;
+    color: #333;
+    position: absolute;
+    top: -10px;
+    right: 80px;
+    z-index: 999;
+}
 .Authorization span {
-    background-color: #4caf50; /* Зелений фон */
-    padding: 10px 20px; /* Відступи */
-    border-radius: 5px; /* Закруглені кути */
-    color: white; /* Білий колір тексту */
-    cursor: pointer; /* Курсор у вигляді руки при наведенні */
-    transition: background-color 0.3s ease; /* Плавна зміна кольору фону */
-    position: absolute; /* Фіксоване позиціонування */
-    top: 0px; /* Відступ зверху */
-    right: 0px; /* Відступ справа */
-    z-index: 999; /* Збільшення з індексом, щоб була поверх інших елементів */
-}
+    background-color: #0a75ce;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
+}
 .Authorization span:hover {
-    background-color: #45a049; /* Темніший зелений фон при наведенні */
+    background-color: #8b8bf1;
+    transform: scale(1.05);
 }

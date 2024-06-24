@@ -28,7 +28,7 @@ const PaginationComponent : FC<IProps>= ({overall_pages}) => {
                         page={Number(searchParams?.get('page'))}
                         sx={{
                             '& .MuiPaginationItem-root': {
-                                color: theme || theme1 ? '#899b0c' : 'black',
+                                color: theme || theme1 ? '#2931c4' : 'black',
                             }}}
             />
         </div>

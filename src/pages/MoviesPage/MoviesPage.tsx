@@ -19,7 +19,6 @@ const  MoviesPage = () => {
             }
         };
 
-
         fetchData();
     }, [params.get('page'), params.get('genre')]);
     const response = useAppSelector(state => state.moviesResponse.base)
@@ -29,7 +28,7 @@ const  MoviesPage = () => {
 
 
     return (
-        <div className={theme || theme1 ? css.MainPageDark : css.MainPage}>
+        <div className={theme || theme1 ? css.MoviesPageDark : css.MoviesPage}>
             <MoviesListComponent movieResponse={response}/>
             <PaginationComponent overall_pages={response.total_pages}/>
         </div>

@@ -1,12 +1,10 @@
 import css from './MoviesListComponent.module.css'
 import {FC} from "react";
 import MovieListCardComponent from "../MovieListCardComponent/MovieListCardComponent";
-import {IResponseBase} from "../../types/responseBaseType";
-
+import {IResponseBase} from "../../interfaces/responseBaseInterface";
 interface Props {
     movieResponse: IResponseBase
 }
-
 const MoviesListComponent : FC<Props> = ({movieResponse}) => {
 
     return (

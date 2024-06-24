@@ -1,16 +1,15 @@
 import {createAsyncThunk, createSlice, isFulfilled} from "@reduxjs/toolkit";
 import {moviesService} from "../../services/moviesService";
 import {AxiosError} from "axios";
-import {IResponseBase} from "../../types/responseBaseType";
-import {IMovieDetail} from "../../types/movieDetailsType";
-import {IGenres} from "../../types/genresType";
+import {IResponseBase} from "../../interfaces/responseBaseInterface";
+import {IMovieDetail} from "../../interfaces/movieDetailsInterface";
+import {IGenres} from "../../interfaces/genresInterface";
 interface IState {
     base: IResponseBase,
     darkTheme: boolean,
     byId: IMovieDetail,
     genresArr: IGenres | null
 }
-
 const initialState : IState = {
     base: {
         results: [],
@@ -49,7 +48,6 @@ const initialState : IState = {
     genresArr: null
 
 };
-
 
 const getByPage = createAsyncThunk<IResponseBase, string>(
     'moviesReducer/getByPage',

@@ -1,81 +1,43 @@
-:root {
-    --light_primary: #f9f9f9;
-    --dark_primary: #1c1c1c;
-}
-
-.moviePage,
-.moviePageDark {
+.moviePage {
     display: flex;
     padding: 20px;
     background-color: var(--light_primary);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 20px;
-}
-
-.moviePageDark {
-    background-color: var(--dark_primary);
-}
-
-.moviePage:hover,
-.moviePageDark:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+}.moviePageDark {
+     display: flex;
+     padding: 20px;
+     background-color: var(--dark_primary);
+ }
 
 .moviePoster {
     flex: 0 0 auto;
     margin-right: 20px;
-    transition: transform 0.3s ease;
 }
 
 .moviePoster img {
     width: 20vw;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.moviePoster:hover img {
-    transform: scale(1.05);
 }
 
 .movieDetails {
     flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .movieDetails h1 {
     font-size: 24px;
     margin-bottom: 10px;
-    transition: color 0.3s ease;
 }
 
 .movieDetails p {
     font-size: 16px;
     margin-bottom: 8px;
-    transition: color 0.3s ease;
 }
 
 .movieDetails p strong {
     font-weight: bold;
     margin-right: 5px;
 }
-
-.Stars {
+.Stars{
     display: flex;
-    align-items: center;
-    gap: 5px;
-}
 
-.Stars .star {
-    color: #ffb400;
-    font-size: 24px;
-    transition: transform 0.3s ease;
-}
-
-.Stars .star:hover {
-    transform: scale(1.2);
 }

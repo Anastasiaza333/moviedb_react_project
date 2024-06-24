@@ -1,0 +1,38 @@
+/*.sidebarButton {*/
+/*    background-color: #0000ff;*/
+/*    color: white;*/
+/*    padding: 10px 20px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.sidebarButton:hover {*/
+/*    background-color: #0000ff;*/
+/*}*/
+
+/*.drawerList {*/
+/*    width: 250px;*/
+/*    transition: background-color 0.3s ease, color 0.3s ease;*/
+/*}*/
+
+/*.drawerListLight {*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.drawerListDark {*/
+/*    color: #0000ff;*/
+/*    background-color: #06102e;*/
+/*}*/
+
+/*.listItemButton {*/
+/*    padding: 10px 20px;*/
+/*    transition: background-color 0.3s ease, color 0.3s ease;*/
+/*}*/
+
+/*.listItemButton:hover {*/
+/*    background-color: #0000ff;*/
+/*    color: white;*/
+/*}*/
